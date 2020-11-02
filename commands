@@ -1,0 +1,19 @@
+https://entwickler.de/online/development/docker-einsteiger-tutorial-210720.html
+docker.io or convience script
+sudo usermod -aG docker $USER //docker mit Userrechten ansprechen, abmeldung erforderlich
+docker-compose
+## init
+docker run hello-world
+docker ps -a
+docker images
+docker exec -it Name
+docker volume create
+docker stop $(sudo docker ps -a -q)
+docker stop Name
+docker rm $(sudo docker ps -a -q)
+docker remove Name
+https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
+## compose
+$ docker-compose up -d
+$ ./run_tests
+$ docker-compose down

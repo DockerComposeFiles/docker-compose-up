@@ -1,0 +1,17 @@
+version: '3'
+services:
+  ouroboros:
+    container_name: ou
+    hostname: ouroboros
+    image: pyouroboros/ouroboros:latest
+    environment:
+      - INTERVAL=500
+      - LOG_LEVEL=error
+      - SELF_UPDATE=true
+      - TZ=Europe/Berlin
+      - NOTIFIERS=tgram://Token/ChatID
+      - CLEANUP=true
+      # - IGNORE=mysql # Ignoriert angegebenen Containernamen
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock

@@ -1,7 +1,7 @@
 version: '3.7'
 services:
     portainer:
-      image: portainer/portainer:latest
+      image: portainer/portainer-ce:latest
       container_name: pt
       restart: always
       ports:

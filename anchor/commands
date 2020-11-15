@@ -1,0 +1,17 @@
+# https://docs.anchore.com/current/docs/engine/quickstart/docker-compose.yaml
+
+# enthält auch Prometheus und swagger UI
+# unten im Docker-compose file
+# Anleitung beachten
+#
+
+
+
+docker-compose exec api anchore-cli system feeds list
+docker-compose exec api anchore-cli system wait
+
+
+
+https://docs.anchore.com/current/docs/engine/engine_installation/docker_compose/ (schwer)
+https://hub.docker.com/r/anchore/anchore-engine (quick start - command line interface)
+https://docs.anchore.com/current/docs/engine/quickstart/ (quick start - curl) - Url direkt benutzen

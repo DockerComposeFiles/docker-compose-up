@@ -18,11 +18,6 @@ $ docker-compose up -d
 $ ./run_tests
 $ docker-compose down
 
-Anchor
-https://docs.anchore.com/current/docs/engine/engine_installation/docker_compose/ (schwer)
-https://hub.docker.com/r/anchore/anchore-engine (quick start - command line interface)
-https://docs.anchore.com/current/docs/engine/quickstart/ (quick start - curl)
-
 zurzeit ungenutzt
 docker run -d --name wt -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
 

@@ -1,0 +1,8 @@
+#
+# website Docker file Unofficial
+#
+# TODO
+# download file -> extract
+#
+
+FROM nginx:latest

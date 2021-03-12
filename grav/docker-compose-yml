@@ -5,4 +5,5 @@
 # download file -> extract
 #
 
-FROM nginx:latest
+FROM nginx
+COPY gsh /usr/share/nginx/html

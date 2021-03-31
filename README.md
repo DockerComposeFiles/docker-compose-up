@@ -1,5 +1,5 @@
 # docker-compose-up
-Dieses Repository ist beinhaltet Docker-Compose Dateien. Sie sind aus dem Internet (imported) oder für die lokale Ausführung gedacht.
+Dieses Repository ist beinhaltet Docker-Compose Dateien. Sie sind aus dem Internet (-import) oder für die lokale Ausführung gedacht.
 
 alle yaml Dateien sind im .yml Format
 

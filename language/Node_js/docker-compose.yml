@@ -1,0 +1,15 @@
+# https://github.com/nodejs/docker-node
+version: '3.8'
+
+services:
+  node:
+    image: node:latest
+    user: node
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    expose:
+      - "8081"
+    command: "npm start"

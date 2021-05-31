@@ -1,9 +1,29 @@
+# website Docker run file for grav Unofficial
 #
-# website Docker file Unofficial
-#
-# TODO
+# TODO dependenciies
 # download file -> extract
 #
+version: '3.9'
+services:
+  apache:
+    container_name: grav-test
+    restart: unless-stopped
+    image: httpd:latest
+    volumes:
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./htdocs:/usr/local/apache2/htdocs
+    ports:
+      - "1900:80"
+      - "1901:443"
+    #links:
+     # - php
 
-FROM nginx
-COPY gsh /usr/share/nginx/html
+  php:
+    container_name: grav-test_php
+    restart: unless-stopped
+    image: php:8-fpm
+    ports:
+      - "8000:80"
+      - "8001:443"
+    volumes_from:
+      - apache

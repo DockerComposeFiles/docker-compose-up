@@ -1,0 +1,19 @@
+# compose file for apache
+version: '3.9'
+services:
+  apache:
+    container_name: ap
+    restart: unless-stopped
+    image: httpd:latest
+    volumes:
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./htdocs:/usr/local/apache2/htdocs
+    ports:
+      - 1900:80
+
+  php:
+    container_name: ap_php
+    restart: unless-stopped
+    image: php:latest
+    volumes_from:
+      - apache

@@ -1,0 +1,2 @@
+docker run -d --name ou --restart unless-stopped -v /var/run/docker.sock:/var/run/docker.sock pyouroboros/ouroboros:latest
+

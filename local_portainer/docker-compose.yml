@@ -1,11 +1,11 @@
-version: '3.7'
+version: '3.9'
 services:
-    portainer:
-      image: portainer/portainer-ce:latest
-      container_name: pt
-      restart: always
-      ports:
-        - 9000:9000
-      volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
-        - /portainer_data:/data
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: pt
+    restart: always
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /portainer_data:/data

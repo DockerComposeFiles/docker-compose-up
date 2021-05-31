@@ -24,3 +24,8 @@ docker unpause my_db
 more
 https://entwickler.de/online/development/docker-einsteiger-tutorial-210720.html
 https://linoxide.com/how-tos/20-docker-containers-desktop-user/
+
+### nginx
+docker run --name mynginx1 -p 85:80 -d nginx
+
+

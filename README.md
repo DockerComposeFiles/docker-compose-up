@@ -11,3 +11,7 @@ Schritt 2: Öffne die Konsole oder Power-Shell im selben Ordner (Shift+Linke Mau
 
 Schritt 3: Führe den befehl "docker-compose up" aus
 
+## andere repos
+https://github.com/cbirkenbeul/docker-homelab
+
+https://github.com/docker/awesome-compose

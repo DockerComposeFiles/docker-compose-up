@@ -3,7 +3,8 @@ version: '3.8'
 
 services:
   node:
-    image: node:latest
+    image: node
+    container_name: node
     user: node
     working_dir: /home/node/app
     environment:
@@ -13,3 +14,4 @@ services:
     expose:
       - "8081"
     command: "npm start"
+

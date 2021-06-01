@@ -1,6 +1,13 @@
+# portainer
 http://localhost:9000
 docker.io or convience script
 usermod -aG docker $USER //docker mit Userrechten ansprechen, abmeldung erforderlich
+
+# build command
+docker build -t <name> .
+# for remote
+docker build <url-path/containername>
+
 ## init
 docker-compose up -d
 docker ps -a

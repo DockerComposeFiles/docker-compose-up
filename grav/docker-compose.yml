@@ -1,7 +1,7 @@
 # website Docker run file for grav Unofficial
 #
-# TODO dependenciies
-# download file -> extract
+# TODO create volumes for specific data
+#
 #
 version: '3.9'
 services:

@@ -1,4 +1,4 @@
-version: '3'
+version: '3.9'
 services:
   ouroboros:
     container_name: ou
@@ -9,9 +9,9 @@ services:
       - LOG_LEVEL=error
       - SELF_UPDATE=true
       - TZ=Europe/Berlin
-      - NOTIFIERS=tgram://Token/ChatID
+#      - NOTIFIERS=tgram://Token/ChatID
       - CLEANUP=true
-      # - IGNORE=mysql # Ignoriert angegebenen Containernamen
+#      - IGNORE=mysql # Ignoriert angegebenen Containernamen
     restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

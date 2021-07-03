@@ -1,0 +1,6 @@
+version: '3.9'
+services:
+    python:
+      image: python
+      container_name: py
+      command: tail -F anything

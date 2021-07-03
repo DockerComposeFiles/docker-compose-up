@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+    debian:
+      image: debian
+      container_name: deb
+      ports:
+        - "5001:22"
+      command: tail -F anything
+
+#    volumes:
+#      - .:/code
+#    links:
+#      - redis
+#  redis:
+#    image: redis

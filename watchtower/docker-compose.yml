@@ -1,0 +1,21 @@
+# https://hub.docker.com/r/containrrr/watchtower
+# tutorial must be use
+# https://www.jamescoyle.net/how-to/docker-compose-files/3323-docker-compose-file-for-watchtower
+# labels musst be on other containers
+
+version: '3'
+
+services:
+  watchtower:
+    image: containrrr/watchtower
+    container_name: wt
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/timezone:/etc/timezone:ro
+    environment:
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_LABEL_ENABLE=true
+      - WATCHTOWER_INCLUDE_RESTARTING=true
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"

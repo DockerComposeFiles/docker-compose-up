@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  deb_volumes:
+    container_name: deb_volumes
+    build: .
+    volumes: # is not possible to connect local folder in project
+      - /composeVolume:/home/composeVolume/
+    command: tail -F anything
+
+volumes:
+  compose_volume: {}

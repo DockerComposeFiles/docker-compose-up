@@ -1,1 +1,1 @@
-https://hub.docker.com/_/openjdk
+Sheep-it bringt seine Runtime selber mit. Es muss theoretisch nur ausgeführt werden.

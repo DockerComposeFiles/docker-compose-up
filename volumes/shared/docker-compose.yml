@@ -1,0 +1,22 @@
+version: "3"
+# volumes_from ist in der version 3 nicht mehr verfügbar
+services:
+
+  write:
+    container_name: write
+    build:
+      context: ./
+      dockerfile: /Dockerfile_write
+    volumes:
+      - data:/home/data
+
+  read:
+    container_name: read
+    build:
+      context: ./
+      dockerfile: Dockerfile_read
+    volumes:
+      - data:/home/data
+
+volumes:
+  data:

@@ -1,7 +1,7 @@
 FROM debian
 
 # Dockerfile Container
-VOLUME ["/home/DockerfileVolume"]
+VOLUME ["/home/dockerfileVolume"]
 COPY dockerfileVolume/some_numbers.txt /home/dockerfileVolume/
 
-#CMD ["sh"]
+ENTRYPOINT ["tail", "-f", "/dev/null"]

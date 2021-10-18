@@ -1,0 +1,4 @@
+version: "lastest"
+services:
+  secure:
+    build: #dev oder prod

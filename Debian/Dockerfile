@@ -1,6 +1,12 @@
 # if ssh is disabled by default
 FROM debian
-RUN apt-get install openssh-server
+RUN apt update && apt upgrade && apt install\
+    openssh-server \
+    \
+    \
+    && apt clean
+
+
 # RUN ssh für Nutzer freischakten
 # https://mg-it.de/blog/ssh-zugang-einrichten
 

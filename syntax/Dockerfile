@@ -10,8 +10,7 @@ FROM base_dev AS dev
 #-------------------------------------
 ## Produktivsystem
 # minimalized_image-latest:feste_Verion AS base_prod
-# Aktualisierungsvorgang
-# Reinigung
+# Aktualisierungsvorgang + Pakete + Reinigung
 
 FROM base_prod AS prod
 # Erstellung eines Nutzers

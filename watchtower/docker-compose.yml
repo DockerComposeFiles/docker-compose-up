@@ -9,9 +9,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /etc/timezone:/etc/timezone:ro
 
-    environment:
-      - WATCHTOWER_NOTIFICATIONS=slack
-      - notification-slack-identifier=wt_Htest
+#    environment:
+#      - WATCHTOWER_NOTIFICATIONS=slack
+#      - notification-slack-identifier=wt_Htest
 
 #     - WATCHTOWER_CLEANUP=true
 #     - WATCHTOWER_LABEL_ENABLE=true

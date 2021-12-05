@@ -3,10 +3,10 @@ version: "3"
 services:
   wordpress:
     container_name: wp
-    image: wordpress:5.7-php7.4
+    image: wordpress:latest
     restart: unless-stopped
     ports:
-      - 80
+      - "80:80"
     environment:
       WORDPRESS_DB_HOST: mysql
       WORDPRESS_DB_USER: username
@@ -16,7 +16,7 @@ services:
       - wordpress:/var/www/html
   mysql:
     container_name: wp_mysql
-    image: mysql:5.7
+    image: mysql:latest
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: wordpress

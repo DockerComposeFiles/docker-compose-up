@@ -9,7 +9,7 @@ services:
       - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
       - ./htdocs:/usr/local/apache2/htdocs
     ports:
-      - 1900:80
+      - 80:80
 
   php:
     container_name: ap_php

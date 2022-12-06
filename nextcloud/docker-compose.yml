@@ -10,7 +10,7 @@ services:
     image: mariadb
     container_name: mariadb
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
-    restart: always
+    restart: on-failure
     volumes:
       - db:/var/lib/mysql
     environment:
@@ -27,4 +27,4 @@ services:
       - db
     volumes:
       - nextcloud:/var/www/html
-    restart: always
+    restart: on-failure

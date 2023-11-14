@@ -8,5 +8,6 @@ services:
       - "9000:9000" # Docker Deamon
       - "8000:8000" # GUI
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /portainer_data:/data
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./data:/data

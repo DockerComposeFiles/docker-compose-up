@@ -5,8 +5,8 @@ services:
     container_name: pt
     restart: always
     ports:
-      - "9000:9000" # Docker Deamon
-      - "8000:8000" # GUI
+      - "9000:9000" # http
+      - "8000:8000" # TCP tunnel server
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
